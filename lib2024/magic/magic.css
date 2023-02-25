@@ -1,0 +1,164 @@
+body {
+    background-color: white;
+    background-image: url("https://i.imgur.com/Yykf3NK.jpg");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    text-align: center;
+}
+h1 {
+     background-color: white;
+     color: black;
+     font-family: "Verdana", sans-serif;
+     font-size: 40px;
+     height: 100%;
+     text-align: center;
+}
+ html {
+     font-family: "Verdana", sans-serif;
+     font-size: 13px;
+}
+ p {
+     color: black;
+     font-family: "Verdana", sans-serif;
+     margin: 0 0 1em;
+     padding: 5px;
+     text-align: justify;
+}
+ .headingdiv {
+    background-color: white;
+    border: 10px outset grey;
+    box-shadow: 10px 10px;
+    margin: auto;
+    max-width: 1400px;
+}
+ .wrap {
+    background-color: white;
+    border: 10px outset grey;
+    border-spacing: 50px;
+    box-shadow: 10px 10px;
+    display: flex;
+    margin: auto;
+    max-width: 1400px;
+    overflow: hidden;
+    position: relative;
+}
+ .col1, 
+ .col2 {
+     padding: 10px;
+     text-align: justify;
+     width: calc(50% + 220px);
+}
+ .col1:before, .col2:before {
+     float: right;
+     height: 90px;
+     width: 1px;
+}
+ .col2:before {
+     float: left;
+}
+ .derleth {
+
+     border: 10px solid #fff;
+     border-radius: 40%;
+     clear: right;
+     float: right;
+     margin: 20px 0 20px 20px;
+     shape-outside: inset(1% round 50%);
+}
+ .col2 img {
+     clear: left;
+     float: left;
+     margin: 20px 20px 20px 0;
+}
+ .col1 .inner {
+     margin-right: 230px;
+}
+ .col2 .inner {
+     margin-left: 230px;
+}
+ .col2 {
+     margin-left: -440px;
+}
+ @media screen and (max-width: 800px) {
+     .wrap {
+         display: block;
+    }
+     .col2:before {
+         display: none;
+    }
+     .col1, .col2, .col1 .inner, .col2 .inner {
+         margin: 0;
+         width: auto;
+    }
+     .col2 img {
+         display: none;
+    }
+
+        @media screen and (max-width: 480px) {
+         .col1:before {
+             display: none;
+        }
+    }
+}
+
+.watermark {
+    opacity: 0.4;
+    position: sticky;
+    z-index: -7;
+}
+
+.watermark_inner {
+    /* Center watermark */
+    align-items: center;
+    display: inline-flex;
+    height: 200%;
+    justify-content: center;
+
+    /* Watermark position */
+    left: -5px;
+    position: absolute;
+    top: -200px;
+
+    /* Full size watermark */
+    width: 100%;
+    z-index: -7;
+}
+
+.watermark_body {
+    color: lightgrey;
+    font-size: 4rem;
+    font-stretch: expanded;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    user-select:none;    
+}
+
+/* Dotted white border */
+.cosmic {
+  border-top: 8px dashed white;
+  max-width: 1420px;
+}
+
+.sigils {
+    background-color: midnightblue;
+    border: 10px outset grey;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1365px;
+    padding: 0 1%;
+}
+
+.sigils > div{
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    margin: 6px;
+    min-width: 280px;
+    padding: 80px;
+    width: 200px;
+}
