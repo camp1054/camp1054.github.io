@@ -2,7 +2,7 @@ body {
     background-color: white;
     background-image: url("https://i.imgur.com/Yykf3NK.jpg");
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 250%;
     text-align: center;
 }
 h1 {
@@ -20,6 +20,7 @@ h1 {
  p {
      color: black;
      font-family: "Verdana", sans-serif;
+     line-height: 1.6;
      margin: 0 0 1em;
      padding: 5px;
      text-align: justify;
